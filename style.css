@@ -1,16 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(fondogeneral.jpg);
     background-attachment: fixed;
     background-position: center center;
     min-height: 100vh;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
-    color: #fff; /* Color base de texto blanco para contraste */
+    color: #000000; /* Color base de texto blanco para contraste */
 }
 
 .descripcion {
@@ -118,4 +124,12 @@ body {
     .descripcion-texto {
         max-width: 90%;
     }
+}
+
+footer{
+    position: fixed;
+    background: #140B5C;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
