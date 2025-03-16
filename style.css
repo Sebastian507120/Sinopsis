@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(fondogeneral.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #fff; /* Color base de texto blanco para contraste */
+}
+
+.descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;  
+    margin-top: 20px;  /*Para dejarle espacio entre seccion y seccion*/
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente para contraste */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards; /* Animación de entrada */
+    
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.descripcion-texto {
+    max-width: 500px;
+}
+
+.descripcion h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #FF5733; /* Rojo cálido para el título */
+    border-bottom: 3px solid #FF5733;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.descripcion p {
+    font-size: 1.1em;
+    line-height: 1.4;
+    margin-top: 15px;
+    text-align: justify;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #dcdcdc; /* Gris claro para texto */
+}
+
+/* Estilos para las imágenes */
+.desc-img {
+    width: 27%;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Sombra más fuerte para imágenes */
+    transition: transform 0.3s ease-in-out;
+}
+
+.desc-img:hover {
+    transform: scale(1.05); /* Efecto zoom en las imágenes */
+}
+
+.izquierda {
+    margin-right: 10px;
+}
+
+.derecha {
+    margin-left: 10px;
+}
+
+/* Botón "Ver más" */
+.btn-explore {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #FF5733; /* Rojo cálido para el botón */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    border: 2px solid #FF5733; /* Borde para mejorar la visibilidad */
+}
+
+.btn-explore:hover {
+    background-color: #C0392B; /* Rojo oscuro cuando el cursor pasa sobre el botón */
+    border-color: #C0392B; /* Cambio de color de borde en hover */
+    text-decoration: none;
+}
+
+
+/* Optimización para dispositivos móviles */
+@media (max-width: 768px) {
+    .descripcion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .desc-img {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .descripcion-texto {
+        max-width: 90%;
+    }
+}
