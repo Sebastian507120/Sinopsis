@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTORESEÑAS</title>
+    <link rel="stylesheet" href="Css/inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href=" url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');"">
+    <link href=" https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="imagenes/Favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <header>
+        <div class=" interior">
+            <img class="logo" src="./img/logo4.png" alt=logo">
+            <div class="navegacion">
+                <ul>
+                    <li><a href=""><img src="img/menu_h.png" alt=""></a>
+                        <ul class="hijos">
+                            <li><a href="#carousel">carousel</a></li>
+                            <li><a href="#descripcion-titulo"">descripcion</a></li>
+                            <li><a href=" #slider ">galeria</a></li>
+                            <li><a href=" #registroForm">forms</a></li>
+                            <li><a href="#video-container">video</a></li>
+                            <li><a href="#content">contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <!-- carousel -->
+    <div id="carousel" class="carousel">
+        <!-- list item -->
+        <div class="list"> <!-- apartado del carrusel  -->
+            <div class="item">
+                <img src="img/carousel1.jpg ">
+                <div class="content">
+                    <div class="author">william Woncada</div>
+                    <div class="title">@WilliamMoncada141</div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/carousel2.jpg">
+                <div class="content">
+                    <div class="author">SEBASTIAN HERRERA</div>
+                    <div class="title">@Sebastianherrera.531</div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/carousel3.jpg">
+                <div class="content">
+                    <div class="author">SEBAS ROMAN </div>
+                    <div class="title">@sebasroman_422</div>
+
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail"> <!-- las imagenes pequeñas del carrusel -->
+            <div class="item">
+                <img src="img/carousel1.jpg">
+                <div class="content">
+                    <div class="title">
+                        WILLIAM MONCADA
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/carousel2.jpg">
+                <div class="content">
+                    <div class="title">
+                        SEBASTIAN HERRERA
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/carousel3.jpg">
+                <div class="content">
+                    <div class="title">
+                        SEBAS ROMAN
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev">
+                < <!-- anterior img en el carrusel-->
+                    <button id="next">></button> <!-- sig img en carrusel -->
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+    <!-- separador  -->
+    <div class="header-bar"></div>
+    <!-- sinopsis  -->
+    <div clas="select">
+        <section class="descripcion">
+            <img src="img/foto-moto-izquierda.jpg" alt="Imagen izquierda" class="desc-img ">
+            <div class="descripcion-texto">
+                <h2 id="descripcion-titulo">Bienvenido</h2>
+                <p id="descripcion-texto">Bienvenido a nuestra página de reseñas de motos. Aquí encontrarás comparativas
+                    detalladas, análisis de rendimiento y opiniones sobre las mejores motocicletas del mercado como (TVS
+                    GUIÑO GUIÑO). ¿Estás buscando tu próxima moto? ¡Estás en el lugar indicado!</p>
+                <a href="#" class="btn-explore"><i class="fas fa-motorcycle"></i> Ver más</a>
+            </div>
+            <img src="img/foto-moto-derecha.jpg" alt="Imagen derecha" class="desc-img ">
+        </section>
+    </div>
+
+
+    <div class="banner">
+        <div id="slider" class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="img/BMW R 1250 GS.jpeg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="img/Ducati-deportiva.jpeg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="img/Gato-moto.jpeg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="img/Kawasaki zh2.jpeg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="img/triumph 2.0.jpeg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="img/Yamaha R6.jpeg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="img/KTM 690.jpeg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="img/R1-Rayo-McQueen.jpeg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="img/triumph 2.0.jpeg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="img/Motoperro.jpg" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="MOTOR-CLUB">
+                MOTOR-CLUB
+            </h1>
+            <div class=" model"> </div>
+        </div>
+    </div>
+
+
+    <div class="header-bar"></div>
+
+    <div class="forms">
+        <div class="contacto-container">
+            <h2>Contacto</h2>
+            <form action="https://formsubmit.co/jjerez12@udi.edu.co" method="POST" id="registroForm">
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <small id="nombreError" style="color: red; display: none;">El nombre no debe contener números.</small>
+
+                <label for="sangre">Tipo de Sangre:</label>
+                <input type="text" id="sangre" name="sangre" required>
+
+                <label for="moto">Moto:</label>
+                <input type="text" id="moto" name="moto" required>
+
+                <label for="experiencia">Nivel de Experiencia:</label>
+                <select id="experiencia" name="experiencia" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="baja">Baja</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                </select>
+
+                <label>Compañante:</label>
+                <input type="radio" id="si" name="companante" value="si" required>
+                <label for="si">Sí</label>
+                <input type="radio" id="no" name="companante" value="no" required>
+                <label for="no">No</label>
+                <div class="enviarbtn">
+                    <button>
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>Enviar</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 🎥 Video con mayor tamaño -->
+
+    <div class="video-container" id="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cYrPyHqsFSY?si=EBmizhWTMD-CSc4Q"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+    </div>
+    <div class="header-bar"></div>
+    <footer>
+        <div class="content" id="content">
+            <div class="top">
+                <div class="logo-details">
+                    <i class="fab fa-slack"></i>
+                    <span class="logo-name">Motoreseñas</span>
+                </div>
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Empresa</li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Comienza aquí</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Reseñas de Motos</li>
+                    <li><a href="#">Mejores marcas de motos</a></li>
+                    <li><a href="#">Modelos top de 2025</a></li>
+                    <li><a href="#">Comparaciones de motos</a></li>
+                    <li><a href="#">Experiencias de pilotos</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Cuenta</li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Mi cuenta</a></li>
+                    <li><a href="#">Preferencias</a></li>
+                    <li><a href="#">Historial de compras</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Consejos de Motos</li>
+                    <li><a href="#">Mantenimiento de motos</a></li>
+                    <li><a href="#">Equipo de seguridad</a></li>
+                    <li><a href="#">Técnicas de conducción</a></li>
+                    <li><a href="#">Reseñas de motos</a></li>
+                </ul>
+                <ul class="box input-box">
+                    <li class="link_name">Suscribete</li>
+                    <li><input type="text" placeholder="Ingresa tu correo"></li>
+                    <li><input type="button" value="Suscribete"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright &#169; 2025 <a href="#">MotoReseñas.</a>Todos los derechos
+                    reservados</span>
+                <span class="policy_terms">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- scrip para forms -->
+    <script>
+        document.getElementById("registroForm").addEventListener("submit", function (event) {
+            let form = event.target;
+            let nombre = document.getElementById("nombre").value;
+            let nombreError = document.getElementById("nombreError");
+
+            // Validación del nombre (sin números)
+            if (/\d/.test(nombre)) {
+                nombreError.style.display = "block";
+                event.preventDefault();
+            } else {
+                nombreError.style.display = "none";
+            }
+        });
+    </script>
+
+    <script>
+        // Referencia al slider
+        const slider = document.getElementById("slider");
+
+        // Función para alternar la animación
+        function toggleAnimation() {
+            const currentState = window.getComputedStyle(slider).animationPlayState;
+            if (currentState === "running") {
+                slider.style.animationPlayState = "paused";  // Detener la animación
+            } else {
+                slider.style.animationPlayState = "running";  // Reanudar la animación
+            }
+        }
+
+        // Agregar un event listener para detectar clics en el slider
+        slider.addEventListener("click", toggleAnimation);
+
+    </script>
+
+    <script src="JS/inicio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
